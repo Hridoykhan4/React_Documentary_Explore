@@ -1,8 +1,10 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import FilterableProductTable from "../components/FilterableProductTable";
+import { sculptureList } from "../components/sculptureList";
 
 const Root = () => {
+
   const PRODUCTS = [
     { category: "Fruits", price: "$1", stocked: true, name: "Apple" },
     { category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit" },
@@ -12,11 +14,20 @@ const Root = () => {
     { category: "Vegetables", price: "$1", stocked: true, name: "Peas" },
   ];
 
+  const [number, setNumber] = useState(0)
+
   return (
     <div className="p-10 space-y-4">
       <h2>Hi I am ROot</h2>
       <Outlet></Outlet>
-      <FilterableProductTable products={PRODUCTS}></FilterableProductTable>
+
+      <h1>{number}</h1>
+      <button onClick={() => {
+        setNumber(number +1)
+        setNumber(number +1)
+        setNumber(number +1)
+      }} className="btn m-3">+3</button>
+     
     </div>
   );
 };
