@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
 import FilterableProductTable from "../components/FilterableProductTable";
 import { sculptureList } from "../components/sculptureList";
+import Navbar from "../components/Navbar";
 
 const Root = () => {
   const PRODUCTS = [
@@ -14,12 +15,10 @@ const Root = () => {
   ];
 
   return (
-    <div className="p-10 space-y-4">
-      <h2>Hi I am ROot</h2>
+    <div className="">
+        <Navbar></Navbar>
       <Outlet></Outlet>
       {/* <FilterableProductTable products={PRODUCTS}></FilterableProductTable> */}
-
-      
     </div>
   );
 };

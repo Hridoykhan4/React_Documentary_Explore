@@ -51,7 +51,7 @@ async function handleFormSubmit(e) {
         } else {
           reject(new Error('Good guess but a wrong answer. Try again!'));
         }
-      }, 1500);
+      }, 2000);
     });
   }
   
