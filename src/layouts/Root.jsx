@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
+// import { sculptureList } from "../components/sculptureList";
 import { Outlet } from "react-router-dom";
 import FilterableProductTable from "../components/FilterableProductTable";
-import { sculptureList } from "../components/sculptureList";
 import Navbar from "../components/Navbar";
 
 const Root = () => {
@@ -16,7 +16,7 @@ const Root = () => {
 
   return (
     <div className="">
-        <Navbar></Navbar>
+      <Navbar></Navbar>
       <Outlet></Outlet>
       {/* <FilterableProductTable products={PRODUCTS}></FilterableProductTable> */}
     </div>
