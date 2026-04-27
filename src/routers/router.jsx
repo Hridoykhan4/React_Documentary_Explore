@@ -4,11 +4,14 @@ import Params from "../components/ParamsBonus/Params";
 import Posts from "../components/ParamsBonus/Posts";
 import PostDetails from "../components/ParamsBonus/PostDetails";
 import Common from "../components/ParamsBonus/Common";
+import NextLevelRoot from "../layouts/NextLevelRoot";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>,
+    element:
+      // <Root></Root>,
+      <NextLevelRoot></NextLevelRoot>,
     errorElement: <div>404 Not Found</div>,
     children: [
       {

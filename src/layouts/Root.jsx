@@ -16,8 +16,8 @@ const Root = () => {
 
   return (
     <div className="">
-      <Navbar></Navbar>
-      <Outlet></Outlet>
+      {/* <Navbar></Navbar> */}
+      {/* <Outlet></Outlet> */}
       {/* <FilterableProductTable products={PRODUCTS}></FilterableProductTable> */}
     </div>
   );
