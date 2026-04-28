@@ -5,6 +5,8 @@ import Posts from "../components/ParamsBonus/Posts";
 import PostDetails from "../components/ParamsBonus/PostDetails";
 import Common from "../components/ParamsBonus/Common";
 import NextLevelRoot from "../layouts/NextLevelRoot";
+import Home from "@/components/Home";
+import About from "@/components/About";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +18,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <div>Home</div>,
+        element: <Home></Home>,
+      },
+      {
+        path: '/about',
+        element: <About />
       },
       {
         path: '/common/:page/:showBtn?',

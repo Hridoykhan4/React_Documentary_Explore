@@ -13,9 +13,10 @@ const Root = () => {
     { category: "Vegetables", price: "$4", stocked: false, name: "Pumpkin" },
     { category: "Vegetables", price: "$1", stocked: true, name: "Peas" },
   ];
-
+  
   return (
     <div className="">
+      
       {/* <Navbar></Navbar> */}
       {/* <Outlet></Outlet> */}
       {/* <FilterableProductTable products={PRODUCTS}></FilterableProductTable> */}
