@@ -7,13 +7,15 @@ import Common from "../components/ParamsBonus/Common";
 import NextLevelRoot from "../layouts/NextLevelRoot";
 import Home from "@/components/Home";
 import About from "@/components/About";
+import PreBoot from "@/layouts/PreBoot";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:
+    <PreBoot></PreBoot>,
       // <Root></Root>,
-      <NextLevelRoot></NextLevelRoot>,
+      // <NextLevelRoot></NextLevelRoot>,
     errorElement: <div>404 Not Found</div>,
     children: [
       {
